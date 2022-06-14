@@ -6,14 +6,14 @@ const About = () => {
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4">
-            <p className="text-4xl font-bold inline border-t-4 border-[#3F3FFF] text-[#FFFFFF] md:text-7xl">
+            <p className="text-5xl font-semibold inline border-t-4 border-[#3F3FFF] text-[#FFFFFF] md:text-7xl">
               About
             </p>
           </div>
           <div></div>
         </div>
-        <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
-          <div className='text-4xl font-bold'>
+        <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
+          <div className='sm:text-right text-4xl font-semibold '>
             <p>Welcome to my space.</p>
           </div>
           <div>
