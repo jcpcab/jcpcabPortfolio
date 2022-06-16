@@ -9,10 +9,22 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
+  const SideBarIcon = ({ icon, text }) => (
+    <div className="sidebar-icon group">
+      <div className=" hidden group-hover:block pr-4">{text}</div>
+      <div>{icon}</div>
+    </div>
+  );
+
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#17171F] text-[#FFFFFF]">
       <div>
-        <img src={pic} alt="Profile Pic" style={{ width: "3rem" }} />
+        <img
+          src={pic}
+          alt="Profile Pic"
+          style={{ width: "3rem" }}
+          className="hidden"
+        />
       </div>
 
       {/* menu */}
@@ -85,38 +97,30 @@ const Navbar = () => {
       </ul>
 
       {/* Social Icons */}
-      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
-        <ul>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#3F3FFF]">
-            <a
-              className="flex justify-between items-center w-full text-[#FFFFFF] ml-3"
-              href="https://www.linkedin.com/in/jcpcabanada/"
-            >
-              LinkedIn <FaLinkedin size={30} />
+
+      <div className=" fixed top-0 left-0 h-screen w-16 m-0 flex flex-wrap text-white shadow">
+        <ul>  
+          <li>
+            <a href="https://www.linkedin.com/in/jcpcabanada/">
+              <SideBarIcon icon={<FaLinkedin size={30} />} text="LinkedIn" />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#3F3FFF]">
-            <a
-              className="flex justify-between items-center w-full text-[#FFFFFF] ml-3"
-              href="https://github.com/jcpcab"
-            >
-              Github <FaGithub size={30} />
+          <li>
+            <a href="https://github.com/jcpcab">
+              <SideBarIcon icon={<FaGithub size={30} />} text="GitHub" />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#3F3FFF]">
-            <a
-              className="flex justify-between items-center w-full text-[#FFFFFF] ml-3"
-              href="mailto:jcpcabanada@gmail.com"
-            >
-              Email <HiOutlineMail size={30} />
+          <li>
+            <a href="mailto:jcpcabanada@gmail.com">
+              <SideBarIcon icon={<HiOutlineMail size={30} />} text="Email" />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#3F3FFF]">
-            <a
-              className="flex justify-between items-center w-full text-[#FFFFFF] ml-3"
-              href="https://drive.google.com/file/d/1ojX1yJVmsNiIwJhcM3wJFRiLwK8Kh3YP/view?usp=sharing"
-            >
-              Resume <BsFillPersonLinesFill size={30} />
+          <li>
+            <a href="https://drive.google.com/file/d/1ojX1yJVmsNiIwJhcM3wJFRiLwK8Kh3YP/view?usp=sharing">
+              <SideBarIcon
+                icon={<BsFillPersonLinesFill size={30} />}
+                text="Resume"
+              />
             </a>
           </li>
         </ul>

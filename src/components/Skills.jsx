@@ -19,7 +19,7 @@ const Skills = () => {
             Skills
           </p>
           <p className="text-1xl font-semibold py-4">
-            // The tech stack I'm efficient with.
+            // My tech stack and technologies I've worked with.
           </p>
         </div>
 

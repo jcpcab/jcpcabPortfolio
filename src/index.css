@@ -15,6 +15,19 @@
     }
 }
 
+@layer components {
+    .sidebar-icon {
+        @apply relative flex items-center justify-center 
+            ml-[10px] hover:ml-[12px] hover:w-36
+            h-12 w-12 mt-6 mb-2 mx-auto shadow-lg
+            bg-[#3F3FFF] text-[#FFFFFF] 
+            hover:bg-[#a6a6ff] 
+            rounded-3xl hover:rounded-xl 
+            duration-200 transition-all ease-linear
+            cursor-pointer;
+    }
+}
+
 .content-div {
     background-repeat: no-repeat;
     background-size: cover;
