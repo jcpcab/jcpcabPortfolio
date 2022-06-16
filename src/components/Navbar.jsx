@@ -43,21 +43,21 @@ const Navbar = () => {
             <ul>
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#3F3FFF]'>
                     <a
-                    className='flex justify-between items-center w-full text-[#FFFFFF]' 
+                    className='flex justify-between items-center w-full text-[#FFFFFF] ml-3'
                     href="/">
                         LinkedIn <FaLinkedin size={30}/>
                     </a>
                 </li>
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#3F3FFF]'>
                     <a
-                    className='flex justify-between items-center w-full text-[#FFFFFF]' 
+                    className='flex justify-between items-center w-full text-[#FFFFFF] ml-3'
                     href="/">
                         Github <FaGithub size={30}/>
                     </a>
                 </li>
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#3F3FFF]'>
                     <a
-                    className='flex justify-between items-center w-full text-[#FFFFFF]' 
+                    className='flex justify-between items-center w-full text-[#FFFFFF] ml-3'
                     href="/">
                     
                         Email <HiOutlineMail size={30}/>
@@ -65,7 +65,7 @@ const Navbar = () => {
                 </li>
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#3F3FFF]'>
                     <a
-                    className='flex justify-between items-center w-full text-[#FFFFFF]' 
+                    className='flex justify-between items-center w-full text-[#FFFFFF] ml-3'
                     href="/">
                     
                         Resume <BsFillPersonLinesFill size={30}/>

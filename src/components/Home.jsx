@@ -13,8 +13,10 @@ const Home = () => {
             <p className='hidden text-[#9191A4]'>TBD</p>
             <div>
                 <button className='text-[#FFFFFF] group font-semibold border-2 px-6 py-2 my-8 flex items-center border-[#3F3FFF] hover:border-[#FFFFFF] bg-[#3F3FFF]'>
-                <BsFillEyeFill className='text-2xl group-hover:rotate-180 duration-300'/>
-                My Work.
+                    <div className='flex flex-row-reverse space-x-2 space-x-reverse'>
+                        <p> My Work.</p>
+                        <BsFillEyeFill className='text-2xl group-hover:rotate-180 duration-300'/>
+                    </div>
                 </button>
             </div>
         </div>

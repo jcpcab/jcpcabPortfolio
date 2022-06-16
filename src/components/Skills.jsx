@@ -8,6 +8,7 @@ import Node from ".././assets/node.png";
 import react from ".././assets/react.png";
 import Tailwind from ".././assets/tailwind.png";
 
+
 const Skills = () => {
   return (
     <div name="skills" className="w-full h-screen bg-[#17171F] text-[#9191A4]">
@@ -66,6 +67,14 @@ const Skills = () => {
               alt="Tailwindcss icon"
             />
             <p className="my-4">TailwindCSS</p>
+          </div>
+          <div className="shadow-md shadow-[#060416] hover:scale-110 duration-500 br-2 rounded-lg">
+            <img
+              className="w-20 mx-auto"
+              src={Github}
+              alt="Github icon"
+            />
+            <p className="my-4">Github</p>
           </div>
         </div>
       </div>
