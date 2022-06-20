@@ -1,5 +1,7 @@
 import React from "react";
 import Placehold from ".././assets/placehold.jpg";
+import { FiGithub } from 'react-icons/fi'
+import { CgWebsite } from 'react-icons/cg'
 
 const Work = () => {
   return (
@@ -9,7 +11,7 @@ const Work = () => {
           <p className="text-5xl font-semibold inline border-t-4 border-[#3F3FFF] text-[#FFFFFF] md:text-7xl">
             My Work
           </p>
-          <p>// Check out some of my recent work</p>
+          <p className="py-4">// Check out some of my recent work</p>
         </div>
 
         {/* Container*/}
@@ -27,37 +29,12 @@ const Work = () => {
               <div className="pt-8 text-center">
                 <a href="/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
-                    Demo
+                    <CgWebsite/>
                   </button>
                 </a>
                 <a href="/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Grid Item */}
-          <div
-            style={{ backgroundImage: `url(${Placehold})` }}
-            className="transition ease-in-out hover:-translate-y-2 duration-150 shadow-lg shadow-[#060416] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            {/*Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-semibold text-white tracking-wider">
-                React.js Project
-              </span>
-              <div className="pt-8 text-center">
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
-                    Demo
-                  </button>
-                </a>
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
-                    Code
+                    <FiGithub/>
                   </button>
                 </a>
               </div>
@@ -77,37 +54,12 @@ const Work = () => {
               <div className="pt-8 text-center">
                 <a href="/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
-                    Demo
+                    <CgWebsite/>
                   </button>
                 </a>
                 <a href="/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Grid Item */}
-          <div
-            style={{ backgroundImage: `url(${Placehold})` }}
-            className="transition ease-in-out hover:-translate-y-2 duration-150 shadow-lg shadow-[#060416] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            {/*Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-semibold text-white tracking-wider">
-                React.js Project
-              </span>
-              <div className="pt-8 text-center">
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
-                    Demo
-                  </button>
-                </a>
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
-                    Code
+                    <FiGithub/>
                   </button>
                 </a>
               </div>
@@ -127,12 +79,12 @@ const Work = () => {
               <div className="pt-8 text-center">
                 <a href="/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
-                    Demo
+                    <CgWebsite/>
                   </button>
                 </a>
                 <a href="/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
-                    Code
+                    <FiGithub/>
                   </button>
                 </a>
               </div>
@@ -152,12 +104,62 @@ const Work = () => {
               <div className="pt-8 text-center">
                 <a href="/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
-                    Demo
+                    <CgWebsite/>
                   </button>
                 </a>
                 <a href="/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
-                    Code
+                    <FiGithub/>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Grid Item */}
+          <div
+            style={{ backgroundImage: `url(${Placehold})` }}
+            className="transition ease-in-out hover:-translate-y-2 duration-150 shadow-lg shadow-[#060416] group container rounded-md flex justify-center items-center mx-auto content-div"
+          >
+            {/*Hover Effects */}
+            <div className="opacity-0 group-hover:opacity-100">
+              <span className="text-2xl font-semibold text-white tracking-wider">
+                React.js Project
+              </span>
+              <div className="pt-8 text-center">
+                <a href="/">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
+                    <CgWebsite/>
+                  </button>
+                </a>
+                <a href="/">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
+                    <FiGithub/>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Grid Item */}
+          <div
+            style={{ backgroundImage: `url(${Placehold})` }}
+            className="transition ease-in-out hover:-translate-y-2 duration-150 shadow-lg shadow-[#060416] group container rounded-md flex justify-center items-center mx-auto content-div"
+          >
+            {/*Hover Effects */}
+            <div className="opacity-0 group-hover:opacity-100">
+              <span className="text-2xl font-semibold text-white tracking-wider">
+                React.js Project
+              </span>
+              <div className="pt-8 text-center">
+                <a href="/">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
+                    <CgWebsite/>
+                  </button>
+                </a>
+                <a href="/">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
+                    <FiGithub/>
                   </button>
                 </a>
               </div>
