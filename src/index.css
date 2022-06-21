@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 @layer base {
     body {
@@ -26,6 +26,17 @@
             duration-200 transition-all ease-linear
             cursor-pointer;
     }
+    .skills-grid {
+        @apply shadow-lg shadow-[#060416]
+            rounded-lg bg-[rgba(63,63,255,0.4)]
+            border-t-[rgba(126,97,255,0.5)] border-t-2
+            border-l-[rgba(126,97,255,0.5)] border-l-2
+            backdrop-blur-sm
+    }
+}
+
+.tilt {
+    transform-style: preserve-3d
 }
 
 .content-div {

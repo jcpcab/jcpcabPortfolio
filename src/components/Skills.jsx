@@ -1,5 +1,6 @@
 import React from "react";
-
+import "../index.css";
+import Tilt from "react-parallax-tilt";
 import CSS from ".././assets/css.png";
 import Github from ".././assets/github.png";
 import HTML from ".././assets/html.png";
@@ -7,13 +8,39 @@ import Javascript from ".././assets/javascript.png";
 import Node from ".././assets/node.png";
 import react from ".././assets/react.png";
 import Tailwind from ".././assets/tailwind.png";
-
+import express from ".././assets/express.png";
+import figma from ".././assets/figma.png";
+import jest from ".././assets/jest.png";
+import postgres from ".././assets/postgres.png";
+import postman from ".././assets/postman.png";
+import redux from ".././assets/redux.png";
+import sqlite from ".././assets/sqlite.png";
 
 const Skills = () => {
+  const SkillCard = ({ skill, text }) => (
+    <Tilt>
+      <div className=" skills-grid py-4">
+        <Tilt>
+          <img className="w-20 mx-auto" src={skill} alt={text} />
+          <p className=" pt-2 text-white font-semibold">{text}</p>
+        </Tilt>
+      </div>
+    </Tilt>
+  );
+
+  const options = {
+    max: 30,
+    scale: 1.0,
+    speed: 1000,
+  };
+
   return (
-    <div name="skills" className="w-full h-screen bg-[#17171F] text-[#9191A4]">
+    <div
+      name="skills"
+      className="w-full h-screen bg-[#17171F] text-[#9191A4] my-20"
+    >
       {/*Container*/}
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
+      <div className="max-w-[1000px] mx-auto p-2 sm:p-20 flex flex-col justify-center w-full h-full">
         <div>
           <p className="text-5xl font-semibold inline border-t-4 border-[#3F3FFF] text-[#FFFFFF] md:text-7xl">
             Skills
@@ -23,59 +50,22 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
-          <div className="shadow-md shadow-[#060416] hover:scale-110 duration-500 br-2 rounded-lg">
-            <img 
-                className="w-20 mx-auto" 
-                src={HTML} 
-                alt="HTML icon" />
-            <p className="my-4">HTML</p>
-          </div>
-          <div className="shadow-md shadow-[#060416] hover:scale-110 duration-500 br-2 rounded-lg">
-            <img 
-                className="w-20 mx-auto"   
-                src={CSS} 
-                alt="CSS icon" />
-            <p className="my-4">CSS</p>
-          </div>
-          <div className="shadow-md shadow-[#060416] hover:scale-110 duration-500 br-2 rounded-lg">
-            <img
-              className="w-20 mx-auto"
-              src={Javascript}
-              alt="JavaScript icon"
-            />
-            <p className="my-4">JavaScript</p>
-          </div>
-          <div className="shadow-md shadow-[#060416] hover:scale-110 duration-500 br-2 rounded-lg">
-            <img 
-            className="w-20 mx-auto" 
-            src={Node} 
-            alt="node icon" />
-            <p className="my-4">Node</p>
-          </div>
-          <div className="shadow-md shadow-[#060416] hover:scale-110 duration-500 br-2 rounded-lg">
-            <img 
-                className="w-20 mx-auto" 
-                src={react} 
-                alt="React icon" />
-            <p className="my-4">React</p>
-          </div>
-          <div className="shadow-md shadow-[#060416] hover:scale-110 duration-500 br-2 rounded-lg">
-            <img
-              className="w-20 mx-auto"
-              src={Tailwind}
-              alt="Tailwindcss icon"
-            />
-            <p className="my-4">TailwindCSS</p>
-          </div>
-          <div className="shadow-md shadow-[#060416] hover:scale-110 duration-500 br-2 rounded-lg">
-            <img
-              className="w-20 mx-auto"
-              src={Github}
-              alt="Github icon"
-            />
-            <p className="my-4">Github</p>
-          </div>
+        {/*Cards*/}
+        <div className="w-full grid grid-cols-5 md:grid-cols-5 sm:grid-cols-3 gap-5 text-center py-8 bg-transparent">
+          <SkillCard skill={CSS} text="CSS" />
+          <SkillCard skill={express} text="Express.js" />
+          <SkillCard skill={figma} text="Figma" />
+          <SkillCard skill={Github} text="GitHub" />
+          <SkillCard skill={HTML} text="HTML" />
+          <SkillCard skill={Javascript} text="JavaScript" />
+          <SkillCard skill={jest} text="Jest" />
+          <SkillCard skill={Node} text="Node.js" />
+          <SkillCard skill={postgres} text="PostgreSQL" />
+          <SkillCard skill={postman} text="Postman" />
+          <SkillCard skill={react} text="React" />
+          <SkillCard skill={redux} text="Redux" />
+          <SkillCard skill={sqlite} text="SQLite3" />
+          <SkillCard skill={Tailwind} text="Tailwind CSS" />
         </div>
       </div>
     </div>
