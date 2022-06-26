@@ -1,7 +1,12 @@
 import React from "react";
 import Placehold from ".././assets/placehold.jpg";
-import { FiGithub } from 'react-icons/fi'
-import { CgWebsite } from 'react-icons/cg'
+import Underdogdevs from ".././assets/underdogdevs.png";
+import Fitness from ".././assets/fitness.jpeg";
+import Africanmarket from ".././assets/africanmarketplace.png";
+import Potluckplanner from ".././assets/potluckplanner.jpg";
+
+import { FiGithub } from "react-icons/fi";
+import { CgWebsite } from "react-icons/cg";
 
 const Work = () => {
   return (
@@ -18,23 +23,98 @@ const Work = () => {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {/* Grid Item */}
           <div
-            style={{ backgroundImage: `url(${Placehold})` }}
-            className="transition ease-in-out hover:-translate-y-2 duration-150 shadow-lg shadow-[#060416] group container rounded-md flex justify-center items-center mx-auto content-div"
+            style={{ backgroundImage: `url(${Underdogdevs})` }}
+            className="transition ease-in-out hover:-translate-y-2 duration-500 shadow-lg shadow-[#060416] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/*Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-semibold text-white tracking-wider">
-                React.js Project
+                Underdog Devs
+              </span>
+              <div className="pt-8 text-center">
+                <a href="https://www.underdogdevs.org/">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
+                    <CgWebsite />
+                  </button>
+                </a>
+                <a href="https://github.com/BloomTech-Labs/underdog-devs-fe-a">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
+                    <FiGithub />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Grid Item */}
+          <div
+            style={{ backgroundImage: `url(${Fitness})` }}
+            className="transition ease-in-out hover:-translate-y-2 duration-500 shadow-lg shadow-[#060416] group container rounded-md flex justify-center items-center mx-auto content-div"
+          >
+            {/*Hover Effects */}
+            <div className="opacity-0 group-hover:opacity-100">
+              <span className="text-2xl font-semibold text-white tracking-wider">
+                Anywhere Fitness
               </span>
               <div className="pt-8 text-center">
                 <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
-                    <CgWebsite/>
+                  <button className="hidden text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
+                    <CgWebsite />
                   </button>
                 </a>
-                <a href="/">
+                <a href="https://github.com/BW-Fitness/backend">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
-                    <FiGithub/>
+                    <FiGithub />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Grid Item */}
+          <div
+            style={{ backgroundImage: `url(${Africanmarket})` }}
+            className="transition ease-in-out hover:-translate-y-2 duration-500 shadow-lg shadow-[#060416] group container rounded-md flex justify-center items-center mx-auto content-div"
+          >
+            {/*Hover Effects */}
+            <div className="opacity-0 group-hover:opacity-100">
+              <span className="text-2xl font-semibold text-white tracking-wider">
+                African Marketplace
+              </span>
+              <div className="pt-8 text-center">
+                <a href="https://create-react-app-git-main-website-african-marketplace.vercel.app/">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
+                    <CgWebsite />
+                  </button>
+                </a>
+                <a href="https://github.com/Build-Week-African-MarketPlace6/FrontEnd">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
+                    <FiGithub />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Grid Item */}
+          <div
+            style={{ backgroundImage: `url(${Potluckplanner})` }}
+            className="transition ease-in-out hover:-translate-y-2 duration-500 shadow-lg shadow-[#060416] group container rounded-md flex justify-center items-center mx-auto content-div"
+          >
+            {/*Hover Effects */}
+            <div className="opacity-0 group-hover:opacity-100">
+              <span className="text-2xl font-semibold text-white tracking-wider">
+                Potluck Planner
+              </span>
+              <div className="pt-8 text-center">
+                <a href="/">
+                  <button className="hidden text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
+                    <CgWebsite />
+                  </button>
+                </a>
+                <a href="https://github.com/Potluck-build">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
+                    <FiGithub />
                   </button>
                 </a>
               </div>
@@ -44,22 +124,22 @@ const Work = () => {
           {/* Grid Item */}
           <div
             style={{ backgroundImage: `url(${Placehold})` }}
-            className="transition ease-in-out hover:-translate-y-2 duration-150 shadow-lg shadow-[#060416] group container rounded-md flex justify-center items-center mx-auto content-div"
+            className="transition ease-in-out hover:-translate-y-2 duration-500 shadow-lg shadow-[#060416] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/*Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-semibold text-white tracking-wider">
-                React.js Project
+                Future Project
               </span>
               <div className="pt-8 text-center">
                 <a href="/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
-                    <CgWebsite/>
+                    <CgWebsite />
                   </button>
                 </a>
                 <a href="/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
-                    <FiGithub/>
+                    <FiGithub />
                   </button>
                 </a>
               </div>
@@ -69,97 +149,22 @@ const Work = () => {
           {/* Grid Item */}
           <div
             style={{ backgroundImage: `url(${Placehold})` }}
-            className="transition ease-in-out hover:-translate-y-2 duration-150 shadow-lg shadow-[#060416] group container rounded-md flex justify-center items-center mx-auto content-div"
+            className="transition ease-in-out hover:-translate-y-2 duration-500 shadow-lg shadow-[#060416] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/*Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-semibold text-white tracking-wider">
-                React.js Project
+                Future Project
               </span>
               <div className="pt-8 text-center">
                 <a href="/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
-                    <CgWebsite/>
+                    <CgWebsite />
                   </button>
                 </a>
                 <a href="/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
-                    <FiGithub/>
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Grid Item */}
-          <div
-            style={{ backgroundImage: `url(${Placehold})` }}
-            className="transition ease-in-out hover:-translate-y-2 duration-150 shadow-lg shadow-[#060416] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            {/*Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-semibold text-white tracking-wider">
-                React.js Project
-              </span>
-              <div className="pt-8 text-center">
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
-                    <CgWebsite/>
-                  </button>
-                </a>
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
-                    <FiGithub/>
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Grid Item */}
-          <div
-            style={{ backgroundImage: `url(${Placehold})` }}
-            className="transition ease-in-out hover:-translate-y-2 duration-150 shadow-lg shadow-[#060416] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            {/*Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-semibold text-white tracking-wider">
-                React.js Project
-              </span>
-              <div className="pt-8 text-center">
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
-                    <CgWebsite/>
-                  </button>
-                </a>
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
-                    <FiGithub/>
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Grid Item */}
-          <div
-            style={{ backgroundImage: `url(${Placehold})` }}
-            className="transition ease-in-out hover:-translate-y-2 duration-150 shadow-lg shadow-[#060416] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            {/*Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-semibold text-white tracking-wider">
-                React.js Project
-              </span>
-              <div className="pt-8 text-center">
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
-                    <CgWebsite/>
-                  </button>
-                </a>
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text gray-700 font-semibold text-lg">
-                    <FiGithub/>
+                    <FiGithub />
                   </button>
                 </a>
               </div>

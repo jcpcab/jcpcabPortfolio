@@ -27,11 +27,11 @@
             cursor-pointer;
     }
     .skills-grid {
-        @apply shadow-lg shadow-[#060416]
-            rounded-lg bg-[rgba(63,63,255,0.4)]
-            border-t-[rgba(126,97,255,0.5)] border-t-2
-            border-l-[rgba(126,97,255,0.5)] border-l-2
-            backdrop-blur-sm
+        @apply shadow-2xl shadow-[#060416]
+            rounded-lg bg-[rgba(63,63,255,0.08)]
+            border-t-[rgba(126,97,255,0.08)] border-t-2
+            border-l-[rgba(126,97,255,0.08)] border-l-2
+            backdrop-blur-sm 
     }
 }
 
@@ -49,7 +49,7 @@
 .content-div:hover {
     background-image: linear-gradient(
         to right,
-        rgba(112, 157, 255, 0.8),
-        hsla(242, 74%, 61%, 0.8)
+        rgba(	63, 63, 255, 0.4),
+        hsla(242, 74%, 61%, 0.55)
     )!important;
 }
