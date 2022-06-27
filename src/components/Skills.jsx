@@ -45,7 +45,7 @@ const Skills = () => {
           </p>
         </div>
 
-        [/*Cards*/]
+        {/*Cards*/}
         <div className="w-full grid grid-cols-5 md:grid-cols-5 sm:grid-cols-3 gap-5 text-center py-8 bg-transparent">
           <SkillCard skill={CSS} text="CSS" />
           <SkillCard skill={express} text="Express.js" />
