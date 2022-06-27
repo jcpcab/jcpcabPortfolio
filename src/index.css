@@ -33,8 +33,13 @@
             border-l-[rgba(126,97,255,0.08)] border-l-2
             backdrop-blur-sm 
     }
+    input[type="text"]:focus ~ .input-text{
+        @apply text-blue-500 bg-[#17171F] transform -translate-y-8 -translate-x-4 scale-75
+    }
+    textarea:focus ~ .input-textarea{
+        @apply text-blue-500 bg-[#17171F] transform -translate-y-8 -translate-x-4 scale-75
+    }
 }
-
 .tilt {
     transform-style: preserve-3d
 }
