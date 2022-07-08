@@ -32,7 +32,7 @@ const Skills = () => {
   return (
     <div
       name="skills"
-      className="w-full h-screen bg-[#17171F] text-[#9191A4] my-20"
+      className="w-full h-screen bg-[#17171F] text-[#9191A4] my-20 "
     >
       {/*Container*/}
       <div className="max-w-[1000px] mx-auto p-2 sm:p-20 flex flex-col justify-center w-full h-full">
@@ -46,7 +46,7 @@ const Skills = () => {
         </div>
 
         {/*Cards*/}
-        <div className="w-full grid grid-cols-5 md:grid-cols-5 sm:grid-cols-3 gap-5 text-center py-8 bg-transparent">
+        <div className="w-full grid grid-cols-3 md:grid-cols-5 sm:grid-cols-3 gap-5 text-center py-8 bg-transparent">
           <SkillCard skill={CSS} text="CSS" />
           <SkillCard skill={express} text="Express.js" />
           <SkillCard skill={figma} text="Figma" />
