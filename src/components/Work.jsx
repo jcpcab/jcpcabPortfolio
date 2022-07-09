@@ -10,7 +10,7 @@ import { CgWebsite } from "react-icons/cg";
 
 const Work = () => {
   return (
-    <div name="work" className="w-full md:h-screen bg-[#17171F] text-[#9191A4]">
+    <div name="work" className="my-72 w-full h-screen bg-[#17171F] text-[#9191A4]">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
           <p className="text-5xl font-semibold inline border-t-4 border-[#3F3FFF] text-[#FFFFFF] md:text-7xl">

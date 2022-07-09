@@ -23,23 +23,24 @@ const Navbar = () => {
     <div>
         <ul className="flex lg:flex-col lg:translate-y-28 md:flex-row sm:flex-row">
           <li>
-            <a target="_blank" href="https://www.linkedin.com/in/jcpcabanada/">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jcpcabanada/">
               <SideBarIcon icon={<FaLinkedin size={30} />} text="LinkedIn" />
             </a>
           </li>
           <li>
-            <a target="_blank" href="https://github.com/jcpcab">
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/jcpcab">
               <SideBarIcon icon={<FaGithub size={30} />} text="GitHub" />
             </a>
           </li>
           <li>
-            <a target="_blank" href="mailto:jcpcabanada@gmail.com">
+            <a target="_blank" rel="noopener noreferrer" href="mailto:jcpcabanada@gmail.com">
               <SideBarIcon icon={<HiOutlineMail size={30} />} text="Email" />
             </a>
           </li>
           <li>
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://drive.google.com/file/d/1ojX1yJVmsNiIwJhcM3wJFRiLwK8Kh3YP/view?usp=sharing"
             >
               <SideBarIcon

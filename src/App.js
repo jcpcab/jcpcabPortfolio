@@ -7,7 +7,7 @@ import Contact from "./components/Contact";
  
 function App() {
   return (
-    <div className='lg:px-32 md:px-32 bg-[#17171F] flex flex-col'>
+    <div className='lg:px-32 md:px-32 sm:px-14 bg-[#17171F] grid grid-cols-1'>
       <Navbar />
       <Home />
       <About />

@@ -5,9 +5,9 @@ import clearPortrait from ".././assets/clearPortrait.png";
 
 const Home = () => {
   return (
-    <div name="home" className="w-full h-screen bg-[#17171F]">
+    <div name="home" className="my-72 w-full h-screen bg-[#17171F]">
       {/*container*/}
-      <div className="max-w-[1000px] mx-auto flex lg:flex-row md:pt-52 md:flex-col sm:flex-col px-8  h-full ">
+      <div className="max-w-[1000px] mx-auto flex lg:flex-row md:pt-52 md:flex-col sm:flex-col px-8 md:mt-24 sm:mt-24  h-full ">
         <div className="flex flex-col justify-center">
           <h1 className="font-sans font-semibold text-selected-text text-4xl sm:text-7xl text-[#FFFFFF] max-w-[500px]">
             Building lovely web experiences.
