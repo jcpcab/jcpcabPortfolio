@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div name="home" className="w-full h-screen bg-[#17171F]">
       {/*container*/}
-      <div className="max-w-[1000px] mx-auto flex flex-row px-8  h-full ">
+      <div className="max-w-[1000px] mx-auto flex lg:flex-row md:pt-52 md:flex-col sm:flex-col px-8  h-full ">
         <div className="flex flex-col justify-center">
           <h1 className="font-sans font-semibold text-selected-text text-4xl sm:text-7xl text-[#FFFFFF] max-w-[500px]">
             Building lovely web experiences.
@@ -26,8 +26,8 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <div className="bg-[#17171F] flex flex-col justify-center">
-          <img className=" md:max-w-[800px] mix-blend-luminosity opacity-40 " src={clearPortrait} alt='Portrait of Jordan'/>
+        <div className="hover:animate-pulse flex flex-col justify-center">
+          <img className=" md:max-w-auto mix-blend-luminosity opacity-40 " src={clearPortrait} alt='Portrait of Jordan'/>
         </div>
       </div>
     </div>

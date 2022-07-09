@@ -17,7 +17,7 @@ import redux from ".././assets/redux.png";
 import sqlite from ".././assets/sqlite.png";
 
 const Skills = () => {
-  const SkillCard = ({ skill, text }) => (
+  const SkillCardTilt = ({ skill, text }) => (
     <Tilt>
       <div className=" skills-grid py-4">
         <Tilt>
@@ -27,7 +27,14 @@ const Skills = () => {
       </div>
     </Tilt>
   );
-
+  const SkillCard = ({ skill, text }) => (
+    <div className=" skills-grid py-4">
+      <div>
+        <img className="w-20 mx-auto" src={skill} alt={text} />
+        <p className=" pt-2 text-white font-semibold">{text}</p>
+      </div>
+    </div>
+  );
 
   return (
     <div
@@ -46,21 +53,41 @@ const Skills = () => {
         </div>
 
         {/*Cards*/}
-        <div className="w-full grid grid-cols-3 md:grid-cols-5 sm:grid-cols-3 gap-5 text-center py-8 bg-transparent">
-          <SkillCard skill={CSS} text="CSS" />
-          <SkillCard skill={express} text="Express.js" />
-          <SkillCard skill={figma} text="Figma" />
-          <SkillCard skill={Github} text="GitHub" />
-          <SkillCard skill={HTML} text="HTML" />
-          <SkillCard skill={Javascript} text="JavaScript" />
-          <SkillCard skill={jest} text="Jest" />
-          <SkillCard skill={Node} text="Node.js" />
-          <SkillCard skill={postgres} text="PostgreSQL" />
-          <SkillCard skill={postman} text="Postman" />
-          <SkillCard skill={react} text="React" />
-          <SkillCard skill={redux} text="Redux" />
-          <SkillCard skill={sqlite} text="SQLite3" />
-          <SkillCard skill={Tailwind} text="Tailwind CSS" />
+        <div className="lg:flex md:hidden sm:hidden">
+          <div className="w-full grid grid-cols-3 md:grid-cols-5 sm:grid-cols-3 gap-5 text-center py-8 bg-transparent">
+            <SkillCardTilt skill={CSS} text="CSS" />
+            <SkillCardTilt skill={express} text="Express.js" />
+            <SkillCardTilt skill={figma} text="Figma" />
+            <SkillCardTilt skill={Github} text="GitHub" />
+            <SkillCardTilt skill={HTML} text="HTML" />
+            <SkillCardTilt skill={Javascript} text="JavaScript" />
+            <SkillCardTilt skill={jest} text="Jest" />
+            <SkillCardTilt skill={Node} text="Node.js" />
+            <SkillCardTilt skill={postgres} text="PostgreSQL" />
+            <SkillCardTilt skill={postman} text="Postman" />
+            <SkillCardTilt skill={react} text="React" />
+            <SkillCardTilt skill={redux} text="Redux" />
+            <SkillCardTilt skill={sqlite} text="SQLite3" />
+            <SkillCardTilt skill={Tailwind} text="Tailwind CSS" />
+          </div>
+        </div>
+        <div className="lg:hidden md:block sm:block">
+          <div className="w-full grid grid-cols-3 md:grid-cols-5 sm:grid-cols-3 gap-5 text-center py-8 bg-transparent">
+            <SkillCard skill={CSS} text="CSS" />
+            <SkillCard skill={express} text="Express.js" />
+            <SkillCard skill={figma} text="Figma" />
+            <SkillCard skill={Github} text="GitHub" />
+            <SkillCard skill={HTML} text="HTML" />
+            <SkillCard skill={Javascript} text="JavaScript" />
+            <SkillCard skill={jest} text="Jest" />
+            <SkillCard skill={Node} text="Node.js" />
+            <SkillCard skill={postgres} text="PostgreSQL" />
+            <SkillCard skill={postman} text="Postman" />
+            <SkillCard skill={react} text="React" />
+            <SkillCard skill={redux} text="Redux" />
+            <SkillCard skill={sqlite} text="SQLite3" />
+            <SkillCard skill={Tailwind} text="Tailwind CSS" />
+          </div>
         </div>
       </div>
     </div>

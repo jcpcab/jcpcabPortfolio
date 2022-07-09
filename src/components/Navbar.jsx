@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import pic from ".././assets/profile.jpg";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
@@ -17,17 +16,42 @@ const Navbar = () => {
   );
 
   return (
-    <div className=" w-full h-[80px] flex justify-between items-center px-4 bg-[#17171F] text-[#FFFFFF]">
-      <div>
-        <img
-          src={pic}
-          alt="Profile Pic"
-          style={{ width: "3rem" }}
-          className="hidden"
-        />
+    <div className="w-full h-[80px] flex justify-between items-center px-4 bg-[#17171F] text-[#FFFFFF]">
+      
+    {/*Social Icons*/}
+
+    <div>
+        <ul className="flex lg:flex-col lg:translate-y-28 md:flex-row sm:flex-row">
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/jcpcabanada/">
+              <SideBarIcon icon={<FaLinkedin size={30} />} text="LinkedIn" />
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/jcpcab">
+              <SideBarIcon icon={<FaGithub size={30} />} text="GitHub" />
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="mailto:jcpcabanada@gmail.com">
+              <SideBarIcon icon={<HiOutlineMail size={30} />} text="Email" />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://drive.google.com/file/d/1ojX1yJVmsNiIwJhcM3wJFRiLwK8Kh3YP/view?usp=sharing"
+            >
+              <SideBarIcon
+                icon={<BsFillPersonLinesFill size={30} />}
+                text="Resume"
+              />
+            </a>
+          </li>
+        </ul>
       </div>
 
-      {/* menu */}
+      {/* Menu */}
       <ul className="hidden md:flex text-xl">
         <li className="hover:animate-pulse transition ease-in-out hover:-translate-y-1/4 duration-500 hover:text-indigo-300">
           <Link to="home" smooth={true} duration={500}>
@@ -56,7 +80,7 @@ const Navbar = () => {
         </li>
       </ul>
 
-      {/* hamburger */}
+      {/* Hamburger */}
       <div onClick={handleClick} className="md:hidden z-10">
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
@@ -98,32 +122,7 @@ const Navbar = () => {
 
       {/* Social Icons */}
 
-      <div className=" fixed top-0 left-0 h-screen w-16 m-0 flex flex-wrap text-white shadow">
-        <ul>  
-          <li>
-            <a target="_blank" href="https://www.linkedin.com/in/jcpcabanada/">
-              <SideBarIcon icon={<FaLinkedin size={30} />} text="LinkedIn" />
-            </a>
-          </li>
-          <li>
-            <a target="_blank" href="https://github.com/jcpcab">
-              <SideBarIcon icon={<FaGithub size={30} />} text="GitHub" />
-            </a>
-          </li>
-          <li>
-            <a target="_blank" href="mailto:jcpcabanada@gmail.com">
-              <SideBarIcon icon={<HiOutlineMail size={30} />} text="Email" />
-            </a>
-          </li>
-          <li>
-            <a target="_blank" href="https://drive.google.com/file/d/1ojX1yJVmsNiIwJhcM3wJFRiLwK8Kh3YP/view?usp=sharing">
-              <SideBarIcon
-                icon={<BsFillPersonLinesFill size={30} />}
-                text="Resume"
-              />
-            </a>
-          </li>
-        </ul>
+      <div className="hidden fixed border-red top-0 left-0 h-screen w-16 m-0 flex flex-wrap text-white shadow">
       </div>
     </div>
   );
