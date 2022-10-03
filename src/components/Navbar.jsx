@@ -41,7 +41,7 @@ const Navbar = () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://drive.google.com/file/d/1ojX1yJVmsNiIwJhcM3wJFRiLwK8Kh3YP/view?usp=sharing"
+              href="https://bit.ly/jordancpcCV"
             >
               <SideBarIcon
                 icon={<BsFillPersonLinesFill size={30} />}
